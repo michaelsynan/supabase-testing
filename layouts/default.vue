@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import '@/assets/css/main.css'
+import '@/assets/css/main.css';
 
 </script>
 
@@ -10,4 +10,6 @@ import '@/assets/css/main.css'
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
