@@ -7,7 +7,7 @@ import Components from 'unplugin-vue-components/vite'
 export default defineNuxtConfig({
   target: 'static',
   app: {
-    baseURL: process.env.NODE_ENV === 'development' ? '/' : '/supabase-testing/', 
+    baseURL: '/', 
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'Nuxt Tailwind Template',
