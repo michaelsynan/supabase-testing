@@ -6,6 +6,7 @@ import Components from 'unplugin-vue-components/vite'
 
 export default defineNuxtConfig({
   target: 'static',
+  baseURL: process.env.NODE_ENV === 'development' ? '/' : '/supabase-testing/', 
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
