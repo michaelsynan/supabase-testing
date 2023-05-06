@@ -18,7 +18,8 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    ['unplugin-icons/nuxt', { autoInstall: true }]
+    ['unplugin-icons/nuxt', { autoInstall: true }],
+    '@nuxtjs/supabase'
   ],
   pinia: {
     autoImports: [
@@ -33,6 +34,10 @@ export default defineNuxtConfig({
         }),
         Icons(),
     ]
+},
+supabase: {
+    url: process.env.SUPABASE_URL, 
+    key: process.env.SUPABASE_ANON_KEY, 
 },
   postcss: {
     plugins: {

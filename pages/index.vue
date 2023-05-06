@@ -1,7 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+console.log()
+
+</script>
 
 <template>
-  <welcome />
+  <div class="text-6xl font-bold text-white">Supabase Testing App</div>
+  <authLogin />
+  <authCheck />
 </template>
 
 
