@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev",
+    "generate": "nuxt generate && touch .output/public/.nojekyll",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.36",
+    "@nuxtjs/tailwindcss": "^6.6.6",
+    "autoprefixer": "^10.4.13",
+    "nuxt": "^3.4.2",
+    "postcss": "^8.4.21",
+    "unplugin-icons": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.7",
+    "pinia": "^2.0.33"
+  }
+}
