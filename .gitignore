@@ -3,5 +3,4 @@ node_modules
 .nuxt
 .nitro
 .cache
-.env
 dist
