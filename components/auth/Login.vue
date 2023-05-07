@@ -1,5 +1,5 @@
 <script setup>
-const supabase = useSupabaseAuthClient()
+const supabase = useSupabaseClient()
 const user = useSupabaseUser()
 
 const loading = ref(false)
@@ -8,7 +8,7 @@ const email = ref('')
 const handleLogin = async () => {
   try {
     loading.value = true
-    const { error } = await supabase.auth.signInWithOtp({ email: email.value })
+    const { data, error } = await supabase.auth.signInWithOtp({ email: email.value })
     if (error) throw error
     alert('Check your email for the login link!')
   } catch (error) {
